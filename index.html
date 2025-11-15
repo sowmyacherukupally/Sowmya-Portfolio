@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sowmya | Netflix‑Style Portfolio</title>
+  <style>
+    /* ====== GLOBAL ====== */
+    body {
+      margin: 0;
+      background: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+    a { color: #e50914; text-decoration: none; }
+
+    /* ====== HEADER ====== */
+    header {
+      padding: 30px;
+      background: #000;
+      border-bottom: 2px solid #141414;
+      text-align: center;
+    }
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+      color: #e50914;
+      letter-spacing: 2px;
+    }
+
+    /* ====== SECTIONS ====== */
+    .section {
+      padding: 40px 5%;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border-left: 4px solid #e50914;
+      padding-left: 10px;
+    }
+
+    /* ====== CARDS (Netflix style rows) ====== */
+    .row {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+    }
+    .card {
+      min-width: 320px;
+      background: #141414;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      transition: transform .3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h3 { margin-top: 0; color: #e50914; }
+
+    /* ====== SKILLS ====== */
+    .skill-box {
+      display: inline-block;
+      background: #e50914;
+      color: #fff;
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      background: #141414;
+      border-top: 2px solid #222;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header>
+    <div class="logo">SOWMYA</div>
+    <p>Frontend Engineer • Observability • React • TypeScript • GraphQL • Node.js</p>
+    <p><a href="mailto:sowmya.cherukupally@eagles.oc.edu">sowmya.cherukupally@eagles.oc.edu</a> | 
+      <a href="https://www.linkedin.com/in/sowch" target="_blank">LinkedIn</a></p>
+  </header>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <div class="section">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I’m a Frontend-focused Software Engineer with 3+ years of experience building 
+        observability‑driven, API‑centric, data‑rich UI platforms. I specialize in React, TypeScript, 
+        GraphQL, and Node.js — crafting intuitive dashboards, real-time insights, and engineering tools 
+        used by large-scale teams. My work increased triage speed by 35–50%, improved UI performance by 
+        40–60%, and strengthened reliability across distributed systems.
+      </p>
+    </div>
+  </div>
+
+  <!-- ====== SKILLS SECTION ====== -->
+  <div class="section">
+    <h2>Skills</h2>
+    <div class="card">
+      <div class="skill-box">React</div>
+      <div class="skill-box">TypeScript</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">GraphQL</div>
+      <div class="skill-box">Node.js</div>
+      <div class="skill-box">REST APIs</div>
+      <div class="skill-box">Prometheus</div>
+      <div class="skill-box">Grafana</div>
+      <div class="skill-box">ELK</div>
+      <div class="skill-box">AWS</div>
+      <div class="skill-box">Kubernetes</div>
+      <div class="skill-box">Docker</div>
+      <div class="skill-box">Terraform</div>
+      <div class="skill-box">CI/CD</div>
+      <div class="skill-box">ArgoCD</div>
+    </div>
+  </div>
+
+  <!-- ====== EXPERIENCE (Netflix row-style) ====== -->
+  <div class="section">
+    <h2>Experience</h2>
+
+    <div class="row">
+      <div class="card">
+        <h3>USAA Bank — Senior Software Engineer</h3>
+        <ul>
+          <li>Built 15+ observability dashboards (React, TS, GraphQL) improving triage for 500+ engineers.</li>
+          <li>Integrated Prometheus, Grafana, ELK → reduced incident detection by ~45%.</li>
+          <li>Optimized UI performance → 50% faster load times (3.8s → 1.9s).</li>
+          <li>Created Node.js + Python automation → removed ~60% manual effort.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Paytm — Software Engineer</h3>
+        <ul>
+          <li>Built 20+ microservices improving responsiveness by ~50%.</li>
+          <li>Developed internal dashboards → improved debugging by ~45%.</li>
+          <li>Prometheus + Grafana monitoring → 35% faster incident response.</li>
+          <li>Docker + Kubernetes deployments → 40% faster releases.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== PROJECTS ====== -->
+  <div class="section">
+    <h2>Projects</h2>
+
+    <div class="row">
+      <div class="card">
+        <h3>StockScope</h3>
+        <p>GraphQL‑driven analytics dashboard with responsive UI and real-time data visualization. 
+        Designed dynamic filters and optimized queries for smoother insights.</p>
+      </div>
+
+      <div class="card">
+        <h3>CarPool App</h3>
+        <p>React + Node.js based ride-matching UI. Features REST API integration, optimized data-fetching, 
+        and logs/metrics for better observability + debugging.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Sowmya Cherukupally — Netflix‑Style Portfolio
+  </footer>
+
+</body>
+</html>
